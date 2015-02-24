@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "railhead_preheat"
-  s.version  = "0.0.2"
+  s.version  = "0.0.3"
   s.date     = "2015-02-24"
   s.summary  = "RailheadPreheat is a Ruby on Rails plugin that automatically caches partials from model."
   s.email    = "bence.nagy@gmail.com"

@@ -9,6 +9,7 @@ class RailheadPreheatController < ActionController::Metal
     self.class.send :include, Rails.application.routes.url_helpers
     self.class.send :helper, ApplicationHelper
     lookup_context.view_paths = ApplicationController.view_paths
+    config.cache_store = ActionController::Base.cache_store
   end
 end
 
