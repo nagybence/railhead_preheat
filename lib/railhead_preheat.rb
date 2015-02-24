@@ -6,6 +6,8 @@ class RailheadPreheatController < ActionController::Metal
 
   def initialize(*args)
     super()
+    self.class.send :include, Rails.application.routes.url_helpers
+    self.class.send :helper, ApplicationHelper
     lookup_context.view_paths = ApplicationController.view_paths
   end
 end
