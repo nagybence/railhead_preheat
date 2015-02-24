@@ -1,0 +1,19 @@
+= RailheadPreheat
+
+RailheadPreheat is a Ruby on Rails plugin that automatically caches partials from model.
+
+== Installation
+
+Add to your Gemfile:
+
+  gem 'railhead_preheat'
+
+== Usage
+
+Simply add to your model:
+
+  after_save :preheat
+
+== License
+
+Copyright (c) 2015 Bence Nagy (bence.nagy@gmail.com), released under the MIT license.
