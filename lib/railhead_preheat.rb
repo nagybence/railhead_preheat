@@ -17,7 +17,7 @@ end
 module RailheadPreheat
 
   def preheat(locals = {})
-    RailheadPreheatController.new.render_to_string(self, locals: locals)
+    RailheadPreheatController.new.render_to_string(self.reload, locals: locals)
   end
 end
 
